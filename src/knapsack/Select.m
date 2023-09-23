@@ -1,7 +1,7 @@
 %% 选择操作
 % 输入Chrom : 种群
 % 输入FitnV : 适应度值
-% 输入GGAP : 代沟
+% 输入GGAP  : 代沟
 % 输出SelCh : 被选择的个体
 function SelCh = Select(Chrom, FitnV, GGAP)
 NIND = size(Chrom, 1); % 种群数目
