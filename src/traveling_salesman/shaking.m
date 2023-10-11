@@ -6,7 +6,7 @@
 % 输出len_shake: 该条路线的距离
 function [route_shake, len_shake] = shaking(route, dist, k)
 N = numel(route); % 城市数目
-select_no = randi([1, N], 1, 2);
+select_no = randi([1, N], 1, 2); 
 i = select_no(1);
 j = select_no(2);
 if k == 1
