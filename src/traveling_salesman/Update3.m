@@ -5,7 +5,7 @@
 % 输出Delta3: 插入操作后的距离差值的矩阵
 function Delta3 = Update3(route, dist, i, j)
 N = numel(route); % 城市数目
-route2 = swap(route, i, j);
+route2 = insertion(route, i, j);
 Delta3 = zeros(N, N); % N行N列的Delta初始化，每个位置上的元素是距离差值
 for i = 1 : N
     for j = 1 : N

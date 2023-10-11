@@ -5,7 +5,7 @@
 % 输出Delta2: 逆转操作后的距离差值的矩阵
 function Delta2 = Update2(route, dist, i, j)
 N = numel(route); % 城市数目
-route2 = swap(route, i, j);
+route2 = reversion(route, i, j);
 Delta2 = zeros(N, N); % N行N列的Delta初始化，每个位置上的元素是距离差值
 for i = 1 : N - 1
     for j = i + 1 : N
